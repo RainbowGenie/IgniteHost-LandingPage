@@ -1,0 +1,23 @@
+.root {
+  @apply w-full flex flex-col items-center justify-center;
+
+  .title {
+    @apply font-bold text-5xl;
+  }
+
+  .fontGradient1 {
+    background: linear-gradient(87.89deg, #EC7604 12.53%, #D94107 86.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .fontGradient2 {
+    background: linear-gradient(258.09deg, #FF640A 20.18%, #FDC401 83.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,27 @@
+.root {
+  @apply relative flex flex-row justify-between py-8 items-center px-16;
+
+  .nav {
+    @apply hidden md:flex cursor-pointer text-white stroke-2 items-center justify-between mr-20 xl:mr-40 w-full;
+
+    .logo {
+      @apply hidden lg:flex w-[275px] h-[221px] mt-[-50px];
+    }
+
+    .itemsWrapper {
+      @apply flex space-x-8;
+
+      .item {
+        @apply flex font-normal text-lg gap-x-2 text-white uppercase font-space-grotesk items-center;
+      }
+
+      .loginButton {
+        @apply flex justify-center items-center px-7 py-4 gap-2.5 rounded-[40px] w-48 uppercase font-space-grotesk text-base font-bold;
+        background: linear-gradient(93.42deg, #FCC502 0%, rgba(254, 136, 6, 0.9) 50%, #FF610A 100%);
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}

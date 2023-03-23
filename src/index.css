@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-y: scroll;
+  font-size: 14px;
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+body {
+  @apply text-white font-maven-pro;
+  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #340F0C 43.31%);
+}
+
+main {
+  min-height: calc(100vh - 370px);
+  @apply px-[7.5rem] py-10;
+}
+
+::-webkit-scrollbar {
+  background-color: #424242;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff2;
+  border-radius: 100px;
+  border: 1px solid #fff5;
+  &:hover {
+    pointer: cursor;
+    background-color: #fff5;
+  }
+}
+
+@layer base {
+  *:disabled {
+    cursor: not-allowed;
+  }
+  h3 {
+    @apply text-[34px] font-bold;
+  }
+  h4 {
+    @apply text-2xl font-bold;
+  }
+  textarea {
+    @apply bg-transparent border border-white rounded-md p-2;
+  }
+
+  select {
+    @apply bg-transparent border border-white rounded-md p-1;
+    option {
+      @apply bg-black;
+    }
+  }
+
+  hr {
+    @apply w-full bg-white;
+  }
+}

@@ -1,0 +1,10 @@
+.root {
+  @apply relative w-full mt-60;
+
+  .iconBackground {
+    background: linear-gradient(93.42deg, #FF5C6526 0%, #FD008B26 53.12%, #6500FC26 100%);
+    &:hover{
+      background: linear-gradient(93.42deg, #FEB802 0%, #FF9806 39.06%, #FF6A0A 100%);
+    }
+  }
+}
