@@ -28,7 +28,7 @@
     .active {
       @apply border-2 border-solid border-transparent scale-[1.1];    
       background:
-      linear-gradient(156.52deg, #9d582f 0%, #721111 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
+      linear-gradient(156.52deg, #540c5f 0%, #68381a 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
       
       /* background:
       linear-gradient(to bottom, rgba(0,0,0,0) 93%, rgba(249, 249, 249, 0.89) 100%) padding-box, linear-gradient(156.52deg, #9d582f 0%, #721111 93%) border-box; */
