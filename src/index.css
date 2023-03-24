@@ -19,7 +19,7 @@ html {
 }
 body {
   @apply text-white font-maven-pro;
-  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #340F0C 43.31%);
+  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #2c0227 43.31%);
 }
 
 main {
@@ -43,8 +43,13 @@ main {
   }
 }
 .fadeIn {
-  -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
 }
 
 .zoomIn {  
@@ -82,6 +87,17 @@ main {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    scale: 0.8;
+    opacity: 0;
   }
 }
 @keyframes zoomIn {

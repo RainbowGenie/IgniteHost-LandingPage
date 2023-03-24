@@ -15,3 +15,4 @@ export { ReactComponent as SvgMessage } from "./message.svg";
 export { ReactComponent as SvgTwitter } from "./twitter.svg";
 export { ReactComponent as SvgInstagram } from "./instagram.svg";
 export { ReactComponent as SvgYouTube } from "./youtube.svg";
+export { ReactComponent as SvgDownArrow } from "./down-arrow.svg";

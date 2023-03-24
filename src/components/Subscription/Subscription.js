@@ -12,27 +12,27 @@ const Subscription = () => {
     const containers = document.getElementsByClassName("item_container");
     if (index === 0) {
       for (let i = 0; i < 3; i++) {
-        containers[i].classList.remove("fadeIn");
-        containers[i].classList.remove("slideIn");
-        containers[i].classList.remove("zoomIn");
-        containers[i].classList.remove("rollIn");
-        containers[i].classList.add("fadeIn");
+        // containers[i].classList.remove("fadeIn");
+        containers[i].classList.add("fadeOut");
+        setTimeout(() => {
+          containers[i].classList.remove("fadeOut");
+        }, 1000);
       }
     } else if (index === 1) {
       for (let i = 0; i < 3; i++) {
-        containers[i].classList.remove("fadeIn");
-        containers[i].classList.remove("slideIn");
-        containers[i].classList.remove("zoomIn");
-        containers[i].classList.remove("rollIn");
-        containers[i].classList.add("rollIn");
+        // containers[i].classList.remove("fadeIn");
+        containers[i].classList.add("fadeOut");
+        setTimeout(() => {
+          containers[i].classList.remove("fadeOut");
+        }, 1000);
       }
     } else {
       for (let i = 0; i < 3; i++) {
-        containers[i].classList.remove("fadeIn");
-        containers[i].classList.remove("slideIn");
-        containers[i].classList.remove("zoomIn");
-        containers[i].classList.remove("rollIn");
-        containers[i].classList.add("zoomIn");
+        // containers[i].classList.remove("fadeIn");
+        containers[i].classList.add("fadeOut");
+        setTimeout(() => {
+          containers[i].classList.remove("fadeOut");
+        }, 1000);
       }
     }
   };
@@ -85,9 +85,13 @@ const Subscription = () => {
           )}
         >
           <div
-            className={cn(s.item, selectedItemIndex === 0 ? s.active : "")}
-            onClick={() => handleClickItem(0)}
+            className={cn(s.item, selectedItemIndex === 1 ? s.active : "")}
+            onClick={() => handleClickItem(1)}
           >
+            <div className="flex items-center mb-4 ml-8">
+              <img src="assets/png/centos.png" width="24" height="24" alt="" />
+              <img src="assets/png/debian.png" width="24" height="24" alt="" />
+            </div>
             <p className="font-space-grotesk font-bold text-2xl leading-10 tracking-widest text-center">
               VPS1
             </p>
@@ -141,9 +145,14 @@ const Subscription = () => {
           )}
         >
           <div
-            className={cn(s.item, selectedItemIndex === 1 ? s.active : "")}
-            onClick={() => handleClickItem(1)}
+            className={cn(s.item, selectedItemIndex === 2 ? s.active : "")}
+            onClick={() => handleClickItem(2)}
           >
+            <div className="flex items-center mb-4 ml-8">
+              <img src="assets/png/windows.png" width="24" height="24" alt="" />
+              <img src="assets/png/centos.png" width="24" height="24" alt="" />
+              <img src="assets/png/ubuntu.png" width="24" height="24" alt="" />
+            </div>
             <p className="font-space-grotesk font-bold text-2xl leading-10 tracking-widest text-center">
               VPS2
             </p>
@@ -197,9 +206,13 @@ const Subscription = () => {
           )}
         >
           <div
-            className={cn(s.item, selectedItemIndex === 2 ? s.active : "")}
-            onClick={() => handleClickItem(2)}
+            className={cn(s.item, selectedItemIndex === 3 ? s.active : "")}
+            onClick={() => handleClickItem(3)}
           >
+            <div className="flex items-center mb-4 ml-8">
+              <img src="assets/png/debian.png" width="24" height="24" alt="" />
+              <img src="assets/png/ubuntu.png" width="24" height="24" alt="" />
+            </div>
             <p className="font-space-grotesk font-bold text-2xl leading-10 tracking-widest text-center">
               VPS3
             </p>
@@ -215,31 +228,31 @@ const Subscription = () => {
             <div className="mt-12 self-center">
               <div className="flex items-center gap-3 py-1">
                 <SvgTickMark />
-                <p className="font-space-grotesk font-normal text-xl">
+                <p className="font-space-grotesk font-normal text-lg">
                   20 GB Storage Space
                 </p>
               </div>
               <div className="flex items-center gap-3 py-1">
                 <SvgTickMark />
-                <p className="font-space-grotesk font-normal text-xl">
+                <p className="font-space-grotesk font-normal text-lg">
                   10 Domain Support
                 </p>
               </div>
               <div className="flex items-center gap-3 py-1">
                 <SvgTickMark />
-                <p className="font-space-grotesk font-normal text-xl">
+                <p className="font-space-grotesk font-normal text-lg">
                   500 GB Bandwith
                 </p>
               </div>
               <div className="flex items-center gap-3 py-1">
                 <SvgTickMark />
-                <p className="font-space-grotesk font-normal text-xl">
+                <p className="font-space-grotesk font-normal text-lg">
                   500 Email Accounts
                 </p>
               </div>
               <div className="flex items-center gap-3 py-1">
                 <SvgTickMark />
-                <p className="font-space-grotesk font-normal text-xl">
+                <p className="font-space-grotesk font-normal text-lg">
                   24/7 Support
                 </p>
               </div>
@@ -247,7 +260,7 @@ const Subscription = () => {
           </div>
         </div>
       </div>
-      <div className={s.buyNow}>BUY NOW</div>
+      {selectedItemIndex !== 0 && <div className={s.buyNow}>BUY NOW</div>}
     </div>
   );
 };
