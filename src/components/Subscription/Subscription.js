@@ -8,6 +8,33 @@ const Subscription = () => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   const handleClick = (index) => {
     setSelectedIndex(index);
+    setSelectedItemIndex(0);
+    const containers = document.getElementsByClassName("item_container");
+    if (index === 0) {
+      for (let i = 0; i < 3; i++) {
+        containers[i].classList.remove("fadeIn");
+        containers[i].classList.remove("slideIn");
+        containers[i].classList.remove("zoomIn");
+        containers[i].classList.remove("rollIn");
+        containers[i].classList.add("fadeIn");
+      }
+    } else if (index === 1) {
+      for (let i = 0; i < 3; i++) {
+        containers[i].classList.remove("fadeIn");
+        containers[i].classList.remove("slideIn");
+        containers[i].classList.remove("zoomIn");
+        containers[i].classList.remove("rollIn");
+        containers[i].classList.add("rollIn");
+      }
+    } else {
+      for (let i = 0; i < 3; i++) {
+        containers[i].classList.remove("fadeIn");
+        containers[i].classList.remove("slideIn");
+        containers[i].classList.remove("zoomIn");
+        containers[i].classList.remove("rollIn");
+        containers[i].classList.add("zoomIn");
+      }
+    }
   };
 
   const handleClickItem = (index) => {
@@ -52,7 +79,11 @@ const Subscription = () => {
         </div>
       </div>
       <div className={s.serviceWrapper}>
-        <div className="w-[30%] xl:w-[25%] cursor-pointer">
+        <div
+          className={cn(
+            "w-[30%] xl:w-[25%] cursor-pointer item_container fadeIn"
+          )}
+        >
           <div
             className={cn(s.item, selectedItemIndex === 0 ? s.active : "")}
             onClick={() => handleClickItem(0)}
@@ -104,7 +135,11 @@ const Subscription = () => {
           </div>
         </div>
 
-        <div className="w-[30%] xl:w-[25%] cursor-pointer">
+        <div
+          className={cn(
+            "w-[30%] xl:w-[25%] cursor-pointer item_container fadeIn"
+          )}
+        >
           <div
             className={cn(s.item, selectedItemIndex === 1 ? s.active : "")}
             onClick={() => handleClickItem(1)}
@@ -156,7 +191,11 @@ const Subscription = () => {
           </div>
         </div>
 
-        <div className="w-[30%] xl:w-[25%] cursor-pointer">
+        <div
+          className={cn(
+            "w-[30%] xl:w-[25%] cursor-pointer item_container fadeIn"
+          )}
+        >
           <div
             className={cn(s.item, selectedItemIndex === 2 ? s.active : "")}
             onClick={() => handleClickItem(2)}

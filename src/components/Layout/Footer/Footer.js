@@ -17,7 +17,7 @@ const Footer = () => {
               "w-[48px] h-[48px] xl:w-[66px] xl:h-[66px] rounded-full flex justify-center"
             )}
           >
-            <SvgMessage className="mt-[8px] w-12 h-12" />
+            <SvgMessage className="mt-[8px] xl:mt-[16px] w-12 h-12" />
           </div>
           <div
             className={cn(

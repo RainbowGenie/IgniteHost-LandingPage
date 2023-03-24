@@ -19,7 +19,7 @@ html {
 }
 body {
   @apply text-white font-maven-pro;
-  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #340F0C 43.31%);
+  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #391330 10.12%, #221024 21.93%, #4c3213 43.31%);
 }
 
 main {
@@ -42,7 +42,71 @@ main {
     background-color: #fff5;
   }
 }
+.fadeIn {
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
 
+.zoomIn {  
+  -webkit-animation: zoomIn 0.5s;
+  animation: zoomIn 0.5s;
+}
+
+.rollIn {
+  -webkit-animation: rollIn 0.5s;
+  animation: rollIn 0.5s;
+}
+
+.slideIn {
+  -webkit-animation: slideIn 0.5s;
+  animation: slideIn 0.5s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes rollIn {
+   0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
+   100% { opacity: 1; transform: translateX(0px) rotate(0deg); } 
+} 
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 @layer base {
   *:disabled {
     cursor: not-allowed;

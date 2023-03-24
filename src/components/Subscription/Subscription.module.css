@@ -13,17 +13,21 @@
   }
 
   .serviceWrapper {
-    @apply flex gap-6 w-[80%] items-start justify-center mt-12;
+    @apply flex gap-12 w-[80%] items-start justify-center mt-12;
 
     .item {
-      @apply pt-24 pb-10 rounded-[20px] border-2 border-transparent flex flex-col;
+      @apply pt-24 pb-10 rounded-[20px] flex flex-col;
       background: linear-gradient(156.52deg, rgba(255, 255, 255, 0.195) 0%, rgba(255, 255, 255, 0.0325) 100%);
       backdrop-filter: blur(12.5px);
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     .active {
-      @apply border-2 border-solid border-transparent;      
+      @apply border-2 border-solid border-transparent scale-[1.1];    
       background:
-              linear-gradient(156.52deg, rgb(78, 61, 62) 0%, rgb(54, 24, 23) 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
+      linear-gradient(156.52deg, #da6622 0%, #7c177d 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
     }
   }
   .buyNow {
