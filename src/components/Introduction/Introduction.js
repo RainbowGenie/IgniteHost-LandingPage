@@ -9,24 +9,21 @@ const Introduction = () => {
         <p className={cn(s.title, "mr-4")}>Secure. Reliable.</p>
         <p className={cn(s.title, s.fontGradient1, "pb-2 relative")}>
           IgniteHost
-          <SvgIgniteHostVector />
+          <SvgIgniteHostVector className="w-56" />
         </p>
       </div>
-      <div className="rounded-[30px] border border-solid border-transparent overflow-hidden">
-        <SvgIgniteText />
+      <div className="rounded-[30px] border border-solid border-transparent overflow-hidden w-[320px] h-[113px]">
+        <SvgIgniteText className="w-full h-full" />
       </div>
-      <div className="flex items-center justify-center gap-4 mt-10">
-        <SvgLine />
-        <p className={cn(s.fontGradient2, "font-bold text-2xl")}>H O S T</p>
-        <SvgLine />
+      <div className="flex items-center justify-center gap-4 mt-6">
+        <SvgLine className="scale-x-75" />
+        <p className={cn(s.fontGradient2, "font-bold text-xl")}>H O S T</p>
+        <SvgLine className="scale-x-75" />
       </div>
       <div className="flex items-center justify-center gap-8 mt-10">
-        <p className={cn(s.fontGradient1, "pb-2 font-semibold text-xl")}>
-          IgniteHost
-        </p>
-        <p className="pb-2 font-semibold text-xl">
-          Secure. Reliable. Is your pick for anonymous server hosting instant
-          deployment in under 5 minutes
+        <p className="pb-2 font-semibold text-lg">
+          Is your pick for anonymous server hosting instant deployment in under
+          5 minutes
         </p>
       </div>
     </div>

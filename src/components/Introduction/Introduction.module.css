@@ -2,7 +2,7 @@
   @apply w-full flex flex-col items-center justify-center;
 
   .title {
-    @apply font-bold text-5xl;
+    @apply font-bold text-4xl;
   }
 
   .fontGradient1 {

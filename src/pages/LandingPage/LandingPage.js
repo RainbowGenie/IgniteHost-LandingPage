@@ -12,7 +12,6 @@ function LandingPage() {
       <Subscription />
       <Features />
       <Faqs />
-      <Footer />
     </div>
   );
 }

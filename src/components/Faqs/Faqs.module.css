@@ -1,11 +1,11 @@
 .root {
-  @apply w-full flex flex-col items-center justify-center mt-80;
+  @apply w-full flex flex-col items-center justify-center mt-40;
   .faqWrapper {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
     backdrop-filter: blur(7.5px);
   }
   .buyNow {
-    @apply font-space-grotesk font-bold text-4xl rounded-md py-5 text-center w-[200px] cursor-pointer mt-32;
+    @apply font-space-grotesk font-bold text-2xl rounded-md py-3 text-center w-48 cursor-pointer mt-32;
     background: linear-gradient(93.42deg, #FDC301 0%, #FF8407 53.12%, #FF640A 100%);
     &:hover {
       background: linear-gradient(93.42deg, #FDC301 0%, #FF8407 73.12%, #FF640A 100%);

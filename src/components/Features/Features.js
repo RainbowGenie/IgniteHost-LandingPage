@@ -4,16 +4,16 @@ import { SvgElectricity, SvgFirewall, SvgHardDisk, SvgSpeed } from "assets/svg";
 const Features = () => {
   return (
     <div className={s.root}>
-      <p className="font-space-grotesk font-bold text-3xl text-[#aaa]">
+      <p className="font-space-grotesk font-bold text-2xl text-[#aaa]">
         VIRTUAL PRIVATE HOSTING FEATURES
       </p>
-      <p className="font-space-grotesk font-bold text-6xl mt-10">
+      <p className="font-space-grotesk font-bold text-4xl mt-10">
         Our Hosting Infrastructure
       </p>
-      <div className="w-[80%] flex items-center justify-center pt-20 gap-8">
+      <div className="w-[95%] xl:w-[80%] flex items-start justify-center pt-20 gap-8">
         <div className="w-1/4 flex flex-col items-center">
-          <SvgElectricity className="mb-4" />
-          <p className="font-space-grotesk font-bold text-3xl">
+          <SvgElectricity className="mb-4 w-[70px] h-[70px] xl:w-[100px] xl:h-[100px]" />
+          <p className="font-space-grotesk font-bold text-xl xl:text-2xl">
             Fast & Reliable
           </p>
           <p className="font-space-grotesk font-bold text-xl text-center mt-12 leading-6">
@@ -23,8 +23,8 @@ const Features = () => {
           </p>
         </div>
         <div className="w-1/4 flex flex-col items-center">
-          <SvgHardDisk className="mb-4" />
-          <p className="font-space-grotesk font-bold text-3xl">
+          <SvgHardDisk className="mb-4 w-[70px] h-[70px] xl:w-[100px] xl:h-[100px]" />
+          <p className="font-space-grotesk font-bold text-xl xl:text-2xl">
             Encrypted Hard Drives
           </p>
           <p className="font-space-grotesk font-bold text-xl text-center mt-12 leading-6">
@@ -34,8 +34,8 @@ const Features = () => {
           </p>
         </div>
         <div className="w-1/4 flex flex-col items-center">
-          <SvgSpeed className="mb-4" />
-          <p className="font-space-grotesk font-bold text-3xl">
+          <SvgSpeed className="mb-4 w-[70px] h-[70px] xl:w-[100px] xl:h-[100px]" />
+          <p className="font-space-grotesk font-bold text-xl xl:text-2xl">
             Unlimited Bandwidth
           </p>
           <p className="font-space-grotesk font-bold text-xl text-center mt-12 leading-6">
@@ -44,14 +44,13 @@ const Features = () => {
           </p>
         </div>
         <div className="w-1/4 flex flex-col items-center">
-          <SvgFirewall className="mb-4" />
-          <p className="font-space-grotesk font-bold text-3xl">
+          <SvgFirewall className="mb-4 w-[70px] h-[70px] xl:w-[100px] xl:h-[100px]" />
+          <p className="font-space-grotesk font-bold text-xl xl:text-2xl">
             AI Powered Firewall
           </p>
           <p className="font-space-grotesk font-bold text-xl text-center mt-12 leading-6">
-            Our AI powered firewall utilizes m[][achine learning techniques
-            block malicious activity in real time offering an extra layer of
-            security.
+            Our AI powered firewall utilizes machine learning techniques block
+            malicious activity in real time offering an extra layer of security.
           </p>
         </div>
       </div>

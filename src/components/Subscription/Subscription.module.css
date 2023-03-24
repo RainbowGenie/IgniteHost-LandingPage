@@ -1,10 +1,10 @@
 .root {
-  @apply w-full flex flex-col items-center justify-center mt-60;
+  @apply w-full flex flex-col items-center justify-center mt-40;
 
   .selectWrapper {
     @apply flex bg-[#d9d9d9] bg-opacity-5 rounded-md;
     .item {
-      @apply font-space-grotesk font-medium text-xl py-4 w-40 text-center cursor-pointer;
+      @apply font-space-grotesk font-medium text-base py-3 w-32 text-center cursor-pointer;
     }
     .active {
       @apply rounded-md;
@@ -16,7 +16,7 @@
     @apply flex gap-6 w-[80%] items-start justify-center mt-12;
 
     .item {
-      @apply pt-24 pb-10 rounded-[20px] border-2 border-transparent;
+      @apply pt-24 pb-10 rounded-[20px] border-2 border-transparent flex flex-col;
       background: linear-gradient(156.52deg, rgba(255, 255, 255, 0.195) 0%, rgba(255, 255, 255, 0.0325) 100%);
       backdrop-filter: blur(12.5px);
     }
@@ -25,12 +25,12 @@
       background:
               linear-gradient(156.52deg, rgb(78, 61, 62) 0%, rgb(54, 24, 23) 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
     }
-    .buyNow {
-      @apply py-5 rounded-md w-[80%] m-auto mt-10 text-center font-space-grotesk font-bold text-lg cursor-pointer;
-      background: linear-gradient(93.42deg, #FDC401 0%, #FF8D07 53.12%, #FF640A 100%);
-      &:hover {
-        background: linear-gradient(93.42deg, #FDC401 0%, #FF8D07 73.12%, #FF640A 100%);
-      }
+  }
+  .buyNow {
+    @apply py-4 rounded-md w-48 m-auto mt-10 text-center font-space-grotesk font-bold text-xl cursor-pointer;
+    background: linear-gradient(93.42deg, #FDC401 0%, #FF8D07 53.12%, #FF640A 100%);
+    &:hover {
+      background: linear-gradient(93.42deg, #FDC401 0%, #FF8D07 73.12%, #FF640A 100%);
     }
   }
 }
