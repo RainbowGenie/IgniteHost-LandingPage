@@ -27,7 +27,7 @@
     .active {
       @apply border-2 border-solid border-transparent scale-[1.1];    
       background:
-      linear-gradient(156.52deg, #da6622 0%, #7c177d 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
+      linear-gradient(156.52deg, #9d582f 0%, #721111 100%) padding-box, linear-gradient(180deg, #FDC202 0%, #FF8F07 52.08%, #FF6A0A 100%) border-box;
     }
   }
   .buyNow {

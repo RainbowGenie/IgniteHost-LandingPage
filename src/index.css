@@ -19,7 +19,7 @@ html {
 }
 body {
   @apply text-white font-maven-pro;
-  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #391330 10.12%, #221024 21.93%, #4c3213 43.31%);
+  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #340F0C 43.31%);
 }
 
 main {
