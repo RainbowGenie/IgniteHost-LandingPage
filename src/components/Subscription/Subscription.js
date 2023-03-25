@@ -69,15 +69,6 @@ const Subscription = () => {
           Offshore
         </div>
       </div>
-      <div className="flex gap-10 items-center justify-center mt-12">
-        <p className="font-space-grotesk font-medium text-2xl">Available OS</p>
-        <div className="flex gap-0">
-          <img src="assets/png/centos.png" width="48" height="48" alt="" />
-          <img src="assets/png/debian.png" width="48" height="48" alt="" />
-          <img src="assets/png/ubuntu.png" width="48" height="48" alt="" />
-          <img src="assets/png/windows.png" width="48" height="48" alt="" />
-        </div>
-      </div>
       <div className={s.serviceWrapper}>
         <div
           className={cn(

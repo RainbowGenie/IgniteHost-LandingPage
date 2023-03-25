@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,20 @@ html {
 }
 body {
   @apply text-white font-maven-pro;
-  background: linear-gradient(197.71deg, rgba(17, 7, 18, 0) 67.39%, rgba(18, 7, 15, 0) 67.4%, rgba(17, 6, 18, 0.8) 89.04%), linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #2c0227 43.31%);
+  background: linear-gradient(
+      197.71deg,
+      rgba(17, 7, 18, 0) 67.39%,
+      rgba(18, 7, 15, 0) 67.4%,
+      rgba(17, 6, 18, 0.8) 89.04%
+    ),
+    linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #110612 43.31%);
+  /* background: linear-gradient(
+      197.71deg,
+      rgba(17, 7, 18, 0) 67.39%,
+      rgba(18, 7, 15, 0) 67.4%,
+      rgba(17, 6, 18, 0.8) 89.04%
+    ),
+    linear-gradient(159.52deg, #110612 10.12%, #241011 21.93%, #340f0c 43.31%); */
 }
 
 main {
@@ -52,7 +65,7 @@ main {
   animation: fadeOut 1s;
 }
 
-.zoomIn {  
+.zoomIn {
   -webkit-animation: zoomIn 0.5s;
   animation: zoomIn 0.5s;
 }
@@ -66,7 +79,6 @@ main {
   -webkit-animation: slideIn 0.5s;
   animation: slideIn 0.5s;
 }
-
 
 @-webkit-keyframes fadeIn {
   from {
@@ -109,9 +121,15 @@ main {
   }
 }
 @keyframes rollIn {
-   0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
-   100% { opacity: 1; transform: translateX(0px) rotate(0deg); } 
-} 
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
 @keyframes slideIn {
   from {
     margin-left: 100%;
