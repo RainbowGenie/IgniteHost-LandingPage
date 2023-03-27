@@ -16,7 +16,7 @@ const Subscription = () => {
         containers[i].classList.add("fadeOut");
         setTimeout(() => {
           containers[i].classList.remove("fadeOut");
-        }, 1000);
+        }, 500);
       }
     } else if (index === 1) {
       for (let i = 0; i < 3; i++) {
@@ -24,7 +24,7 @@ const Subscription = () => {
         containers[i].classList.add("fadeOut");
         setTimeout(() => {
           containers[i].classList.remove("fadeOut");
-        }, 1000);
+        }, 500);
       }
     } else {
       for (let i = 0; i < 3; i++) {
@@ -32,7 +32,7 @@ const Subscription = () => {
         containers[i].classList.add("fadeOut");
         setTimeout(() => {
           containers[i].classList.remove("fadeOut");
-        }, 1000);
+        }, 500);
       }
     }
   };

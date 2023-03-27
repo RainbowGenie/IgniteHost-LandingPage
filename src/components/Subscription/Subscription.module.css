@@ -19,6 +19,7 @@
 
   .serviceWrapper {
     @apply flex gap-12 w-[80%] items-start justify-center mt-12;
+    /* backdrop-filter: blur(12.5px); */
 
     .item {
       @apply pt-4 pb-5 rounded-[20px] flex flex-col;
@@ -38,7 +39,12 @@
     }
     .active {
       @apply border-2 border-solid border-transparent scale-[1];
-      background: linear-gradient(156.52deg, #491529 0%, #110612 100%)
+      /* background: linear-gradient(156.52deg, #491529 0%, #110612 100%)
+          padding-box,
+        linear-gradient(180deg, #fdc202 0%, #ff8f07 52.08%, #ff6a0a 100%)
+          border-box; */
+
+      background: linear-gradient(156.52deg, #503629 0%, #362837 100%)
           padding-box,
         linear-gradient(180deg, #fdc202 0%, #ff8f07 52.08%, #ff6a0a 100%)
           border-box;

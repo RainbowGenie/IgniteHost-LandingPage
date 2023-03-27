@@ -56,13 +56,13 @@ main {
   }
 }
 .fadeIn {
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 
 .fadeOut {
-  -webkit-animation: fadeOut 1s;
-  animation: fadeOut 1s;
+  -webkit-animation: fadeOut 0.5s;
+  animation: fadeOut 0.5s;
 }
 
 .zoomIn {
